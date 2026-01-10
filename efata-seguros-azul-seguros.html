@@ -156,31 +156,9 @@ border-top:1px solid var(--border);
 h1{ font-size:2.1rem; }
 }
 </style>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N49R9V5V');</script>
-<!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17810409206"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17810409206');
-</script>
-  
 </head>
 
-<body class="bg-slate-950 text-slate-100">
-
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49R9V5V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<body>
 
 <header>
 <h1>Seguro Auto Azul Seguros</h1>
@@ -250,38 +228,34 @@ Solicitação sem compromisso • Atendimento humano
 </p>
 
 <form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="SUA_ACCESS_KEY_AQUI">
+<input type="hidden" name="redirect" value="https://efatacorretoradeseguros.com.br/obrigado.html">
 
-  <!-- CONFIGURAÇÃO WEB3FORMS -->
-  <input type="hidden" name="access_key" value="bdf5e2f1-5680-479d-b6de-10f2e7ec7e16">
-  <input type="hidden" name="subject" value="Lead – Seguro Auto Azul Seguros">
-  <input type="hidden" name="redirect" value="https://efatacorretoradeseguros.com.br/obrigado.html">
+<label>Nome Completo</label>
+<input type="text" name="nome" required>
 
-  <label>Nome Completo</label>
-  <input type="text" name="nome" required>
+<label>WhatsApp</label>
+<input type="tel" name="whatsapp" required>
 
-  <label>WhatsApp</label>
-  <input type="tel" name="whatsapp" required>
+<label>Modelo do Veículo</label>
+<input type="text" name="veiculo" placeholder="Ex: Onix, HB20, Corolla" required>
 
-  <label>Modelo do Veículo</label>
-  <input type="text" name="veiculo" placeholder="Ex: Onix, HB20, Corolla" required>
+<label>Ano do Veículo</label>
+<input type="number" name="ano" required>
 
-  <label>Ano do Veículo</label>
-  <input type="number" name="ano" required>
+<label>Percentual FIPE desejado</label>
+<select name="fipe" required>
+  <option value="">Selecione</option>
+  <option value="80%">80% FIPE</option>
+  <option value="90%">90% FIPE</option>
+  <option value="100%">100% FIPE</option>
+</select>
 
-  <label>Percentual FIPE desejado</label>
-  <select name="fipe" required>
-    <option value="">Selecione</option>
-    <option value="80%">80% FIPE</option>
-    <option value="90%">90% FIPE</option>
-    <option value="100%">100% FIPE</option>
-  </select>
+<button type="submit">Solicitar cotação</button>
 
-  <button type="submit">Solicitar cotação</button>
-
-  <p class="trust">
-    🔒 Seus dados são protegidos • Atendimento conforme LGPD
-  </p>
-
+<p class="trust">
+🔒 Seus dados são protegidos • Atendimento conforme LGPD
+</p>
 </form>
 </div>
 
@@ -299,7 +273,3 @@ Informações sujeitas às condições gerais da apólice.
 
 </body>
 </html>
-
-
-
-
