@@ -1,160 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Pacote Proteção Clínica | Efata Seguros</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Pacote Proteção Clínica | Efata Seguros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-  font-family: Arial, sans-serif;
-  background:#f4f6f8;
-  margin:0;
-}
-.container{
-  max-width:480px;
-  background:#ffffff;
-  margin:40px auto;
-  padding:30px;
-  border-radius:8px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-h1{
-  font-size:24px;
-  margin-bottom:10px;
-}
-p{
-  color:#555;
-  font-size:15px;
-}
-ul{
-  background:#f0f8f5;
-  padding:15px;
-  border-radius:5px;
-  margin-bottom:20px;
-}
-ul li{
-  margin-bottom:8px;
-  font-size:14px;
-}
-label{
-  display:block;
-  font-weight:bold;
-  font-size:14px;
-  margin-bottom:5px;
-}
-input, select{
-  width:100%;
-  padding:10px;
-  margin-bottom:15px;
-  border-radius:5px;
-  border:1px solid #ccc;
-}
-button{
-  width:100%;
-  background:#25D366;
-  color:#fff;
-  border:none;
-  padding:15px;
-  font-size:16px;
-  border-radius:5px;
-  cursor:pointer;
-}
-button:hover{
-  background:#1ebe5d;
-}
-.hidden{
-  display:none;
-}
-</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 480px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 24px;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1ebe5d;
+    }
+    .benefits {
+      background: #f0f8f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .benefits li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- PÁGINA DE CAPTURA -->
-<div class="container" id="paginaForm">
+<div class="container">
+  <h1>Proteção Clínica Médica/Odontológica</h1>
+  <p>
+    Conheça o <strong>Pacote Proteção Clínica</strong> da 
+    <strong>Efata Seguros</strong> e evite prejuízos com processos,
+    sinistros e imprevistos.
+  </p>
 
-<h1>Proteção Clínica Médica/Odontológica</h1>
+  <ul class="benefits">
+    <li>✔ Responsabilidade Civil Profissional</li>
+    <li>✔ Proteção contra processos judiciais</li>
+    <li>✔ Cobertura para equipamentos</li>
+    <li>✔ Tranquilidade para focar nos pacientes</li>
+  </ul>
 
-<p>
-Conheça o <strong>Pacote Proteção Clínica</strong> da <strong>Efata Seguros</strong> e evite prejuízos com processos, sinistros e imprevistos.
-</p>
+  <form id="leadForm">
+    <label>Nome completo</label>
+    <input type="text" id="nome" required>
 
-<ul>
-<li>✔ Responsabilidade Civil Profissional</li>
-<li>✔ Proteção contra processos judiciais</li>
-<li>✔ Cobertura para equipamentos e estrutura</li>
-<li>✔ Tranquilidade para focar nos pacientes</li>
-</ul>
+    <label>WhatsApp</label>
+    <input type="tel" id="telefone" required placeholder="DDD + número">
 
-<form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+    <label>E-mail</label>
+    <input type="email" id="email" required placeholder="exemplo@clinica.com.br">
 
-<input type="hidden" name="access_key" value="bdf5e2f1-5680-479d-b6de-10f2e7ec7e16">
+    <label>Profissão</label>
+    <select id="profissao" required>
+      <option value="">Selecione</option>
+      <option>Dentista</option>
+      <option>Proprietário de Clínica</option>
+      <option>Gestor</option>
+    </select>
 
-<label>Nome completo</label>
-<input type="text" name="nome" id="nome" required>
+    <label>Principal interesse</label>
+    <select id="interesse" required>
+      <option value="">Selecione</option>
+      <option>RC Profissional</option>
+      <option>Empresarial</option>
+      <option>Equipamentos</option>
+      <option>Vida em grupo</option>
+      <option>Proteção Clínica Médica/Odontológica</option>
+    </select>
 
-<label>WhatsApp</label>
-<input type="tel" name="telefone" id="telefone" required>
-
-<label>Profissão</label>
-<select name="profissao" id="profissao" required>
-  <option value="">Selecione</option>
-  <option>Dentista</option>
-  <option>Proprietário de Clínica</option>
-  <option>Gestor</option>
-</select>
-
-<label>Principal Interesse</label>
-<select name="interesse" id="interesse" required>
-  <option value="">Selecione</option>
-  <option>Responsabilidade Civil Profissional</option>
-  <option>Seguro de Equipamentos</option>
-  <option>Proteção Completa da Clínica</option>
-</select>
-
-<button type="submit">Falar com um Especialista no WhatsApp</button>
-
-</form>
-</div>
-
-<!-- PÁGINA DE OBRIGADO -->
-<div class="container hidden" id="paginaObrigado">
-<h1 style="color:#25D366;">Obrigado!</h1>
-<p>Recebemos seu interesse no <strong>Pacote Proteção Clínica</strong>.</p>
-<p>Um especialista da <strong>Efata Seguros</strong> dará continuidade ao atendimento pelo WhatsApp.</p>
+    <button type="submit">
+      Falar com um Especialista no WhatsApp
+    </button>
+  </form>
 </div>
 
 <script>
 document.getElementById("leadForm").addEventListener("submit", function(e){
   e.preventDefault();
 
-  const form = e.target;
-  const formData = new FormData(form);
+  const nome = document.getElementById("nome").value;
+  const telefone = document.getElementById("telefone").value;
+  const email = document.getElementById("email").value;
+  const profissao = document.getElementById("profissao").value;
+  const interesse = document.getElementById("interesse").value;
 
-  // SALVA O LEAD NO WEB3FORMS
-  fetch(form.action, {
+  const mensagem = 
+`Olá, me chamo ${nome}.
+WhatsApp: ${telefone}
+E-mail: ${email}
+Profissão: ${profissao}
+
+Tenho interesse no *Pacote Proteção Clínica* da *Efata Seguros*.
+Interesse principal: ${interesse}`;
+
+  fetch("https://api.web3forms.com/submit", {
     method: "POST",
-    body: formData
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      access_key: "bdf5e2f1-5680-479d-b6de-10f2e7ec7e16",
+      name: nome,
+      phone: telefone,
+      email: email,
+      profession: profissao,
+      interest: interesse,
+      product: "Proteção Clínica Médica/Odontológica"
+    })
+  }).finally(() => {
+
+    const numeroDestino = "5511978454925";
+    const urlWhatsapp = 
+      `https://api.whatsapp.com/send?phone=${numeroDestino}&text=${encodeURIComponent(mensagem)}`;
+
+    window.open(urlWhatsapp, "_blank");
+
+    setTimeout(() => {
+      window.location.href = "obrigado.html";
+    }, 800);
+
   });
-
-  // MENSAGEM WHATSAPP (CONTEÚDO PRESERVADO)
-  const mensagem =
-`Olá, me chamo ${form.nome.value}.
-WhatsApp: ${form.telefone.value}
-Profissão: ${form.profissao.value}
-Tenho interesse no Pacote Proteção Clínica da Efata Seguros.
-Interesse principal: ${form.interesse.value}`;
-
-  const numeroWhats = "5511978454925"; // 🔴 TROQUE PELO SEU NÚMERO
-  window.open(
-    `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`,
-    "_blank"
-  );
-
-  // EXIBE PÁGINA DE OBRIGADO
-  document.getElementById("paginaForm").classList.add("hidden");
-  document.getElementById("paginaObrigado").classList.remove("hidden");
 });
 </script>
 
