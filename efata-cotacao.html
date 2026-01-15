@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,34 +23,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  </style>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N49R9V5V');</script>
-<!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17810409206"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- BOTÃO LIGAR AGORA - ESTILO (SEM AFETAR LAYOUT) -->
+  <style>
+    .btn-ligar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(135deg, #0f9d58, #34a853);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease;
+    }
 
-  gtag('config', 'AW-17810409206');
-</script>
-  
+    .btn-ligar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+      background: linear-gradient(135deg, #0b8043, #2e7d32);
+    }
+
+    @media (max-width: 480px) {
+      .btn-ligar {
+        font-size: 17px;
+        padding: 20px;
+      }
+    }
+  </style>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N49R9V5V');
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17810409206"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17810409206');
+  </script>
 </head>
 
 <body class="bg-slate-950 text-slate-100">
 
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49R9V5V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49R9V5V"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 
-<!-- HERO + FORM -->
 <section class="min-h-screen flex items-center bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
   <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -66,14 +100,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Faça a cotação do seu <strong>seguro auto</strong> com uma corretora humanizada. Compare preços entre as maiores seguradoras do Brasil e economize até 30%.
       </p>
 
-      <!-- PROVAS SOCIAIS -->
       <div class="flex items-center gap-6 mb-10">
         <div class="text-sm"><span class="font-bold text-white">+12.000</span><br><span class="text-slate-400">clientes protegidos</span></div>
         <div class="h-8 w-px bg-slate-700"></div>
         <div class="text-sm"><span class="font-bold text-white">+10</span><br><span class="text-slate-400">seguradoras parceiras</span></div>
       </div>
 
-      <!-- LOGOS -->
       <div class="flex flex-wrap gap-6 opacity-50 grayscale text-sm font-black">
         <span>PORTO</span><span>ALLIANZ</span><span>TOKIO</span><span>AZUL</span>
       </div>
@@ -86,7 +118,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
 
-        <!-- CONFIGURAÇÃO WEB3FORMS -->
         <input type="hidden" name="access_key" value="bdf5e2f1-5680-479d-b6de-10f2e7ec7e16">
         <input type="hidden" name="subject" value="Novo Lead – Seguro Auto Efatá">
         <input type="hidden" name="redirect" value="https://efatacorretoradeseguros.com.br/obrigado.html">
@@ -99,6 +130,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Fazer cotação de seguro auto agora
         </button>
 
+        <!-- BOTÃO LIGAR AGORA (MESMO TAMANHO DO CTA) -->
+        <a href="tel:+5511978454925" class="btn-ligar mt-3">
+          📞 Ligar agora e falar com um consultor
+        </a>
+
         <p class="text-[10px] text-slate-500 text-center mt-3 flex items-center justify-center gap-1">
           <span>🔒</span> Seus dados estão 100% protegidos
         </p>
@@ -108,12 +144,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- BENEFÍCIOS -->
 <section class="py-20 bg-slate-900">
   <div class="container mx-auto px-6 text-center">
-
-    <h2 class="sr-only">Por que contratar seu seguro auto com a Efatá Seguros</h2>
-
     <div class="grid md:grid-cols-3 gap-10">
       <div>
         <h3 class="font-bold text-xl mb-2">Cobertura Completa de Seguro Auto</h3>
@@ -131,7 +163,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- CTA FINAL -->
 <section class="py-20 bg-gradient-to-r from-green-500 to-emerald-400 text-black text-center">
   <h2 class="text-3xl lg:text-4xl font-extrabold mb-6">Faça agora sua cotação de seguro auto com especialistas</h2>
   <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="inline-block bg-black text-white px-12 py-5 rounded-full font-bold text-lg">
@@ -140,12 +171,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <footer class="py-10 text-center text-slate-500 text-xs">
-  © 2026 Efatá Corretora de Seguros • Atendimento conforme SUSEP
+  © 2025 Efatá Corretora de Seguros • Atendimento conforme SUSEP
 </footer>
 
 </body>
 </html>
-
-
-
-
